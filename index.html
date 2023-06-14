@@ -1,0 +1,217 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+  <style>
+    body{
+        background-image: url(images/R.jpeg);
+        
+    }
+    div{
+        background-image: url(images/R.jpeg);
+    }
+    #slideshow {
+        border-style: ridge;
+       
+        overflow: hidden;
+        height: 250px;
+        width: 940px;
+        margin: 0 auto;
+    }
+     
+    /* Style each of the sides
+    with a fixed width and height */
+     
+    .slide {
+        float: left;
+        height: 250px;
+        width: 940px;
+    }
+     
+    /* Add animation to the slides */
+     
+    .slide-wrapper {
+         
+        /* Calculate the total width on the
+      basis of number of slides */
+        width: calc(940px * 4);
+         
+        /* Specify the animation with the
+      duration and speed */
+        animation: slide 10s ease infinite;
+    }
+     
+    
+    /* Define the animation
+    for the slideshow */
+     
+    @keyframes slide {
+         
+        /* Calculate the margin-left for
+      each of the slides */
+        20% {
+            margin-left: 0px;
+        }
+        40% {
+            margin-left: calc(-940px * 1);
+        }
+        60% {
+            margin-left: calc(-940px * 2);
+        }
+        80% {
+            margin-left: calc(-940px * 3);
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #000000;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover {
+        background-color: #666666;
+      }
+  </style>
+</head>
+
+<body>
+  <div id="main">		
+
+    <header>
+	  <div id="strapline">
+	    <div id="welcome_slogan">
+            <center><h1><font face="TimesNewRoman">Agriculture Query Management System for Farmers</font></h1></center>
+	      
+	    </div><!--close welcome_slogan-->
+      </div><!--close strapline-->	  
+	  <nav>
+	    <span id="menubar" >
+          <ul id="navi">
+            <li class="current"><a href="index.html">Home</a></li>
+            
+            <li><a href="Farmers.html">Farmers</a></li>
+            <li><a href="Admin.html">Administration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="FormerRegister.html"> Register Now</a></li>
+          </ul>
+        </span><!--close menubar-->	
+      </nav>
+    </header>
+<br>
+
+    <hr>
+    <div id="slideshow">  
+	  <div class="slide-wrapper">
+        <div class="slide">
+            <img width="940" height="250" src="images/a1.jpg" />
+        </div>
+        <div class="slide">
+            <img width="940" height="250" src="images/a2.jpg"/>
+        </div>
+        <div class="slide">
+            <img width="940" height="250" src="images/a3.jpg"/>
+        </div>
+        <div class="slide">
+            <img width="940" height="250" src="images/a4.jpg" />
+        </div>
+	  </div><!--close slideshow-->  	
+	</div><!--close slideshow_container-->   
+	
+	<div id="site_content">		
+	  
+	  <div class="sidebar_container">       
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h2>Agriculture</h2>
+            <p>The science or practice of farming, including cultivation of the soil
+                 for the growing of crops and the rearing of animals to provide food, wool, 
+                 and other products.
+</p>
+          </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->     		
+		
+        </div><!--close sidebar-->
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h3>Soil</h3>
+            <p>Soil is very important factor for choosing type of crop.</p>         
+		  </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->  		
+        <div class="sidebar">
+          <div class="sidebar_item">
+            <h2>Contact</h2>
+            <p>Phone: 0431-123456</p>
+            <p>Email: <a href="mailto:info@youremail.com">www.agliculturesystem.com</a></p>
+          </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->
+       </div><!--close sidebar_container-->	
+	   
+	  <div id="content">
+        <div class="content_item">
+		  <h1 background-color="red">Agriculture Project</h1> 
+                 
+          <p>The objective of the Agriculture Query Management System for Farmers is to develop 
+            sustainable and climate resilient agricultural production systems.
+             The project has four components. </p>
+
+          <p>(1)Irrigated agriculture infrastructure improvement component seeks to improve farmland infrastructure and 
+            the reliability and efficiency of irrigation and drainage systems.
+             (2) Enhanced climate-smart agricultural practices component will build on the 
+             improved irrigation infrastructure and water delivery activities to improve the 
+             productivity of irrigated agriculture, increase farmers' incomes, and reduce their 
+             vulnerability to adverse climatic events. 
+             (3) Institutional strengthening and capacity building component seeks to improve the 
+             capacity of farmers, farmer organizations, and institutions at various levels for 
+             conducting and promoting sustainable and climate resilient agriculture. 
+             (4) Project management support component will provide support for project implementing
+              agencies at each level to manage, implement, supervise and monitor project activities
+               and progress. </p>
+		 
+	  
+		  <div class="content_container">
+		    <marquee direction="up"><p>Modern agriculture is an evolving approach to agricultural 
+                innovations and farming practices that helps farmers increase efficiency 
+                and reduce the amount of  natural resource</p>
+			</marquee>             
+		  	<div class="button_small">
+		      <a href="FormerRegister.html">Farmer Registration</a>
+		    </div><!--close button_small-->
+		  </div><!--close content_container-->
+          <div class="content_container">
+		    <marquee direction="down"><p>Modern agriculture is an evolving approach to agricultural innovations and farming practices that helps farmers increase efficiency and reduce the amount of natural resource</p>          
+		  	</marquee>
+			<div class="button_small">
+                           <font color="white"> <marquee direction="left"><<<<<<<</marquee></font>
+			  
+		    </div><!--close button_small-->		  
+		  </div><!--close content_container-->	
+		  
+		</div><!--close content_item-->
+      </div><!--close content-->   
+	</div><!--close site_content-->  	
+
+    <footer>
+	  
+    </footer>
+	
+  </div><!--close main-->
+  
+  <!-- javascript at the bottom for fast page loading -->
+  
+</body>
+</html>

@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <style>
+    body{
+      background-image: url(images/R.jpeg);
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+  }
+h1{
+  background-color: beige;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #666666;
+}
+</style>
+  </head>
+  <body>
+    <span id="menubar" >
+      <ul id="navi">
+        <li class="current"><a href="index.html">Home</a></li>
+        
+        <li><a href="Farmers.html">Farmers</a></li>
+        <li><a href="Admin.html">Administration</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="FormerRegister.html"> Register Now</a></li>
+      </ul>
+    </span><!--close menubar-->	
+    <form action="crop.html" method="post">
+		  <h1 background-color="red" align="center">Enter Crop Details</h1> 
+                  <h1 align="center"><select name="crop">
+                      <option>select crop</option>
+                      <option>Wheat</option>
+                       <option>Rice</option>
+                      <option>Maize</option>
+                      <option>Millets</option>
+                      <option>Pulses</option>
+                       <option>Sugarcane</option>
+                      <option>Cotton</option>
+                       <option>Jute and Oilseeds</option>
+                      <option>Coffee</option>
+                       <option>Coconut</option>
+                      <option>Tea</option>
+                      <option>Rubber</option>
+                      <option>Fruits & Vegetables</option>
+                       <option></option>
+                      <option></option>
+                  </select></h1>
+                  <h1 align="center"><input type="text" name="first" required="" placeholder="First Fertilizers"  /></h1>
+                   <h1 align="center"><input type="text" name="second" required="" placeholder="Second Fertilizers"  /></h1>
+                    <h1 align="center"><input type="text" name="third" required="" placeholder="Third Fertilizers"  /></h1>
+                  <h1 align="center"><input type="submit" value="   Upload   " onclick="ale()" /></h1>
+		  </form>
+                  <div class="content_container">
+		  
+		  </div><!--close content_container-->
+          <div class="content_container">
+		   
+					  
+		  </div><!--close content_container-->	
+		  
+	</div><!--close site_content-->  
+</div><!--close content_item-->
+      </div><!--close content--> 
+      <script>
+        function ale(   )
+        {
+          alert("Crop Details Updated");
+        }
+      </script>
+  </body>
+</html>

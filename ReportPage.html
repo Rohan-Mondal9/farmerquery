@@ -1,0 +1,102 @@
+<html>
+    <head>
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #000000;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover {
+        background-color: #666666;
+      }
+      body{
+        background-image: url(images/R.jpeg);
+		margin-left: 20%;
+		margin-right: 20%;
+		margin-top: 10%;
+    }
+    
+    h1{
+      background-color: beige;
+    }
+</style>
+    </head>
+    <body>
+        <span id="menubar" >
+            <ul id="navi">
+              <li class="current"><a href="index.html">Home</a></li>
+              
+              <li><a href="Farmers.html">Farmers</a></li>
+              <li><a href="Admin.html">Administration</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="FormerRegister.html"> Register Now</a></li>
+            </ul>
+          </span><!--close menubar-->	
+        <h1 align="center"><font color="green" ><b>Farmers Home Page</b></font></h1>
+            <br><br><br><br>
+            
+            <h1 align="center">Enter Your Soil</h1>
+            <h1 align="center">
+                  <input type="radio" onclick="al()" id="Alluvial soils" name="soil" value="Alluvial soils">
+                     <label for="Alluvial soils">Alluvial soils</label><br>
+                  <input type="radio" onclick="Bl()"id="Black soils" name="soil" value="Black soils">
+                     <label for="Black soils">Black soils</label><br>
+                  <input type="radio" id="Red soils" onclick="Rl()" name="soil" value="Red soils">
+                     <label for="Red soils">Red soils</label>
+                
+                
+                
+                </h1>
+           
+            <p id="ans"></p>
+                
+         
+            <script>
+
+              function al()
+              {
+                  var an="<table align='center' border='10' style='background-color: rgb(104, 231, 113);'> <tr bgcolor='green'> <th>Type Of Crop</th><th>Weather Condition(Temperature)</th> <th>Soil</th></tr> ";
+                  
+                      an+="<tr><td>Apple <br>Pea<br> Lentil<br> Oats <br> </td> <td> 21 C to 24 C <br>15 C to 30 C <br>18 C to 30 C <br>15 C to 25 C <br></td> <td>Alluvial soil</td> </tr> ";
+                  
+                  an+="</table>";
+                  document.getElementById("ans").innerHTML=an;
+              }
+              function Bl()
+              {
+                  var an="<table align='center' style='background-color: rgb(104, 231, 113);' border='10'> <tr bgcolor='green'> <th>Type Of Crop</th><th>Weather Condition(Temperature)</th> <th>Soil</th></tr> ";
+                  
+                      an+="<tr><td>Wheat <br>Rice<br> Tomatoes<br> Banana <br> </td> <td> 21 C to 26 C <br>27 C to 32 C <br>21 C to 24 C <br> 15C to 35 C <br></td> <td>Black soil</td> </tr> ";
+                  
+                  an+="</table>";
+                  document.getElementById("ans").innerHTML=an;
+              }
+              function Rl()
+              {
+                  var an="<table align='center' style='background-color: rgb(104, 231, 113);' border='10'> <tr bgcolor='green'> <th>Type Of Crop</th><th>Weather Condition(Temperature)</th> <th>Soil</th></tr> ";
+                  
+                      an+="<tr><td>Cotton <br>Potato <br> Orange<br> Mango <br> </td> <td> 20 C to 30 C <br>15 C to 20 C <br>21 C to 32 C <br>24 C to 27 C <br></td> <td>Red soil</td> </tr> ";
+                  
+                  an+="</table>";
+                  document.getElementById("ans").innerHTML=an;
+              }
+
+
+            </script>
+    </body>
+</html>

@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>Register</title>
+		<style>
+    body{
+        background-image: url(images/R.jpeg);
+		margin-left: 20%;
+		margin-right: 20%;
+		margin-top: 10%;
+    }
+	p{
+		background-color: beige;
+	}
+	ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #000000;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover {
+        background-color: #666666;
+      }
+	</style>
+    </head>
+    <body>
+        <span id="menubar" >
+			<ul id="navi">
+			  <li class="current"><a href="index.html">Home</a></li>
+			  
+			  <li><a href="Farmers.html">Farmers</a></li>
+			  <li><a href="Admin.html">Administration</a></li>
+			  <li><a href="contact.html">Contact Us</a></li>
+			  <li><a href="FormerRegister.html"> Register Now</a></li>
+			</ul>
+		  </span><!--close menubar-->	
+<div class="book-appointment">
+	<h2>Farmer Registration</h2>
+	<b>
+			<form action="index.html" method="post">
+			<div class="left-agileits-w3layouts same">
+			<div class="gaps">
+				<p>Name</p>
+                                
+					<input type="text" name="Name" placeholder="" required=""/>
+			</div>	
+                            <div class="gaps">
+				<p>Gender</p>	
+					<select class="form-control" name="Gender">
+						<option><--Select Gender--></option>
+						<option>Male</option>
+						<option>Female</option>
+					</select>
+			</div>
+				<div class="gaps">	
+				<p>Phone Number</p>
+					<input type="text" name="Number" placeholder="" required=""/>
+				</div>
+					
+				<div class="gaps">
+				<p>User_Id</p>
+						<textarea name="Userid" placeholder="" required="" ></textarea>
+				</div>
+                            
+                            <div class="gaps">
+				<p>Password</p>
+						<input type="password" name="Password" placeholder="" required="" />
+				</div>
+			
+			</div>
+			<div class="right-agileinfo same">
+			
+			
+			
+			</div>
+			<div class="clear"></div>
+						  <input type="submit" value="Submit" onclick="ale()">
+			</form>	
+		</b>
+		</div><!--close content_item-->
+                
+      </div><!--close content-->   
+      
+	</div><!--close site_content-->  
+<script>
+	function ale()
+	{
+		alert("Thank you for Registering");
+	}
+</script>
+    </body>
+</html>
